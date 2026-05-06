@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Segni Seyoum Negasa — AI Researcher & Full-Stack Developer</title>
+    <meta name="description"
+        content="Segni Seyoum Negasa — AI researcher, full-stack developer, and founder from Ethiopia. Published researcher, builder of civic technology, and advocate for Africa's digital future." />
+    <meta property="og:title" content="Segni Seyoum Negasa" />
+    <meta property="og:description" content="AI Researcher · Full-Stack Developer · Ethiopia" />
+    <meta property="og:image" content="assets/og-image.jpg" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='28'>⚡</text></svg>" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+
+<body>
+
+    <!-- CURSOR -->
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+
+    <!-- CANVAS -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- ── NAVIGATION ──────────────────────────────────────────────────────────── -->
+    <nav>
+        <a href="#hero" class="nav-logo">S<span>N</span></a>
+        <ul class="nav-links">
+            <li><a href="#about"><span class="num">01.</span>About</a></li>
+            <li><a href="#education"><span class="num">02.</span>Education</a></li>
+            <li><a href="#research"><span class="num">03.</span>Research</a></li>
+            <li><a href="#projects"><span class="num">04.</span>Projects</a></li>
+            <li><a href="#leadership"><span class="num">05.</span>Leadership</a></li>
+            <li><a href="#contact"><span class="num">06.</span>Contact</a></li>
+        </ul>
+        <a href="assets/resume.pdf" target="_blank" class="nav-resume">Resume ↗</a>
+    </nav>
+
+    <!-- ── SIDEBARS ─────────────────────────────────────────────────────────────── -->
+    <div class="sidebar-left">
+        <a href="https://github.com/SegniNegasa123" target="_blank" class="icon" title="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+            </svg>
+        </a>
+        <a href="https://segninegasa123.github.io" target="_blank" class="icon" title="Portfolio">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                <polyline points="15 3 21 3 21 9" />
+                <line x1="10" y1="14" x2="21" y2="3" />
+            </svg>
+        </a>
+        <a href="mailto:segni.s.negasa@gmail.com" class="icon" title="Email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+            </svg>
+        </a>
+    </div>
+    <div class="sidebar-right">
+        <a href="mailto:segni.s.negasa@gmail.com" class="email">segni.s.negasa@gmail.com</a>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════════
+     01 · HERO
+═══════════════════════════════════════════════════════════════════════════ -->
+    <section id="hero">
+        <p class="hero-greeting">Hi, my name is</p>
+        <h1 class="hero-name">Segni Seyoum Negasa.</h1>
+        <h2 class="hero-sub" id="typewriter-wrap">
+            I build AI for <span id="typewriter" style="color:var(--teal)">Africa's future</span><span
+                style="color:var(--teal);animation:blink 1s step-end infinite">|</span>.
+        </h2>
+        <p class="hero-desc">
+            I'm an Ethiopian AI researcher, full-stack developer, and community builder. I publish research indexed
+            internationally, build civic technology platforms, and train the next generation of African coders — all
+            toward one goal: rebuilding Ethiopia's digital infrastructure with artificial intelligence.
+        </p>
+        <div class="hero-cta">
+            <a href="#research" class="btn-primary">View My Research ↓</a>
+            <a href="#contact" class="btn-ghost">Get In Touch →</a>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-line"></div>
+            SCROLL TO EXPLORE
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════════
+     02 · ABOUT
+═══════════════════════════════════════════════════════════════════════════ -->
+    <section id="about">
+        <div class="section-heading reveal">
+            <span class="num">01.</span>
+            <h2>About Me</h2>
+        </div>
+
+        <div class="about-grid reveal">
+            <div class="about-text">
+                <p>I grew up in Nekemt, Ethiopia, in a country where 120 million people still navigate government,
+                    healthcare, and agriculture through paper-based systems. That gap is not a statistic to me — it is
+                    the environment I came from, and the problem I have chosen to spend my career solving.</p>
+                <p>I graduated from <strong>Oromia Development Association Special Boarding School</strong> — one of
+                    Ethiopia's most selective institutions, admitting only 4.3% of applicants — with an ESSLCE score of
+                    <strong>519/600</strong>. As a student, I published two internationally indexed research papers,
+                    built software platforms adopted by institutions, co-founded a tech community, and graduated 45
+                    students from a coding programme I built from scratch in an underserved town with no prior access to
+                    technology education.</p>
+                <p>My work sits at the intersection of <strong>applied AI</strong>, <strong>civic technology</strong>,
+                    and <strong>community development</strong>. I don't just build for scale — I build for the people
+                    who have never had access to the systems everyone else takes for granted.</p>
+                <p>Here are some technologies I work with:</p>
+                <ul class="about-tech">
+                    <li>Python</li>
+                    <li>JavaScript / TypeScript</li>
+                    <li>React.js</li>
+                    <li>Node.js / Express</li>
+                    <li>Streamlit</li>
+                    <li>MySQL / REST APIs</li>
+                    <li>Matplotlib / NumPy</li>
+                    <li>Git / GitHub</li>
+                </ul>
+            </div>
+            <div class="about-img-wrap">
+                <div class="about-img-inner">
+                    <!-- Replace with: <img src="assets/profile.jpg" alt="Segni Seyoum Negasa"/> -->
+                    <div
+                        style="width:100%;height:100%;background:var(--bg3);border-radius:4px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;">
+                        <span style="font-size:3rem;opacity:0.3">👤</span>
+                        <span
+                            style="font-family:var(--font-mono);font-size:0.65rem;color:var(--slate);letter-spacing:0.1em;">REPLACE
+                            WITH</span>
+                        <span
+                            style="font-family:var(--font-mono);font-size:0.65rem;color:var(--slate);letter-spacing:0.1em;">assets/profile.jpg</span>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-num">2</div>
+                        <div class="stat-label">INDEXED PAPERS</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-num">45</div>
+                        <div class="stat-label">STUDENTS TRAINED</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-num">519</div>
+                        <div class="stat-label">ESSLCE / 600</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-num">4.3<span style="font-size:1.2rem">%</span></div>
+                        <div class="stat-label">ODA ACCEPTANCE</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════════
+     03 · EDUCATION
+═══════════════════════════════════════════════════════════════════════════ -->
+    <section id="education">
+        <div class="section-heading reveal">
+            <span class="num">02.</span>
+            <h2>Education</h2>
+        </div>
+
+        <div class="edu-grid">
+            <div class="edu-card reveal">
+                <div class="edu-badge">Top 4.3% Nationally</div>
+                <div class="edu-year">Sept 2021 – July 2025</div>
+                <div class="edu-school">Oromia Development Association Special Boarding School</div>
+                <div class="edu-degree">Ethiopian Secondary Education Certificate (ESSLCE) — 519 / 600</div>
+                <div class="edu-tags">
+                    <span class="tag">Natural Science Stream</span>
+                    <span class="tag">Calculus II (AP/IB Equiv.)</span>
+                    <span class="tag">Physics · Chemistry · Biology</span>
+                    <span class="tag">Full Scholarship Maintained</span>
+                    <span class="tag">AddisCoder Alumnus</span>
+                </div>
+            </div>
+
+            <div class="edu-card reveal">
+                <div class="edu-badge">Full Scholarship</div>
+                <div class="edu-year">2025 – Present</div>
+                <div class="edu-school">Shaggar Institute of Technology (SIT)</div>
+                <div class="edu-degree">Bachelor of Science in Artificial Intelligence — GPA 3.99</div>
+                <div class="edu-tags">
+                    <span class="tag">AI Engineering</span>
+                    <span class="tag">Calculus II · Physics</span>
+                    <span class="tag">Intro to CS</span>
+                    <span class="tag">English · Chemistry Lab</span>
+                    <span class="tag">SIT Apprenticeship Accepted</span>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top:28px;" class="reveal">
+            <div class="edu-card" style="max-width:100%;">
+                <div class="edu-year">Aug 2025</div>
+                <div class="edu-school">Robert H. Smith School of Business — University of Maryland</div>
+                <div class="edu-degree">AI and Career Empowerment Program — Certificate of Completion</div>
+                <div class="edu-tags">
+                    <span class="tag">AI Strategy</span>
+                    <span class="tag">Organizational AI</span>
+                    <span class="tag">Workforce Transformation</span>
+                    <span class="tag">Career Development</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════════
+     04 · RESEARCH
+═══════════════════════════════════════════════════════════════════════════ -->
+    <section id="research">
+        <div class="section-heading reveal">
+            <span class="num">03.</span>
+            <h2>Research & Publications</h2>
+        </div>
+
+        <div class="research-grid">
+            <!-- Paper 1 -->
+            <div class="research-card reveal">
+                <div class="research-card-top">
+                    <div class="folder-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" />
+                            <polyline points="13 2 13 9 20 9" />
+                        </svg>
+                    </div>
+                    <div class="card-links">
+                        <!-- Replace href with actual paper link -->
+                        <a href="#" title="View Paper">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                <polyline points="15 3 21 3 21 9" />
+                                <line x1="10" y1="14" x2="21" y2="3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="research-title">Traffic Flow Modeling in Meskel Square Road, Addis Ababa, Ethiopia</div>
+                <div class="research-desc">
+                    Four-day observational study at one of Addis Ababa's most congested intersections. Applied
+                    calculus-based speed, density, and flow modeling in Python. Identified a strong inverse
+                    speed–density relationship (r = −0.72). Designed and deployed a live AI-integrated camera system for
+                    real-time vehicle and pedestrian tracking — pushing the project from academic analysis into
+                    deployable civic technology.
+                </div>
+                <div class="research-stat">
+                    <span class="r-stat">IEEE Recognized</span>
+                    <span class="r-stat">·</span>
+                    <span class="r-stat">OpenAIRE Indexed</span>
+                    <span class="r-stat">·</span>
+                    <span class="r-stat">r = −0.72</span>
+                    <span class="r-stat">·</span>
+                    <span class="r-stat">7.62 veh/m peak density</span>
+                </div>
+                <div class="research-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Matplotlib</span>
+                    <span class="tag">AI Camera System</span>
+                    <span class="tag">Calculus Models</span>
+                    <span class="tag">Urban Data Science</span>
+                </div>
+            </div>
+
+            <!-- Paper 2 -->
+            <div class="research-card reveal">
+                <div class="research-card-top">
+                    <div class="folder-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" />
+                            <polyline points="13 2 13 9 20 9" />
+                        </svg>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://github.com/SegniNegasa123/BIOMIMETIC-COOLING-SIMULATION" target="_blank"
+                            title="GitHub">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="research-title">Biomimetic Cooling System: Nature-Inspired Architectural Thermal Regulation
+                </div>
+                <div class="research-desc">
+                    Designed a passive building cooling system inspired by termite-mound ventilation — a centuries-old
+                    architecture used by the Dorze and Konso peoples of Southern Ethiopia. Applied Stefan's Law,
+                    Fourier's conduction equation, and the thermodynamic stack effect. Python/Streamlit simulation
+                    reduced modelled heat entry rates from over 50% to under 10%, demonstrating a zero-HVAC design
+                    viable for tropical climates.
+                </div>
+                <div class="research-stat">
+                    <span class="r-stat">OpenAIRE Indexed</span>
+                    <span class="r-stat">·</span>
+                    <span class="r-stat">Heat entry: 50% → 10%</span>
+                    <span class="r-stat">·</span>
+                    <span class="r-stat">Zero mechanical HVAC</span>
+                </div>
+                <div class="research-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Streamlit</span>
+                    <span class="tag">Fluid Dynamics</span>
+                    <span class="tag">Stefan's Law</span>
+                    <span class="tag">Fourier Conduction</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════════
+     05 · PROJECTS
+═══════════════════════════════════════════════════════════════════════════ -->
+    <section id="projects">
+        <div class="section-heading reveal">
+            <span class="num">04.</span>
+            <h2>Projects</h2>
+        </div>
+
+        <!-- Featured Projects -->
+        <div class="projects-featured">
+
+            <!-- SMART CITY ETHIOPIA -->
+            <div class="project-featured reveal">
+                <div class="project-img" style="background:linear-gradient(135deg,#0A192F,#112240);">
+                    <div class="project-img-bg"
+                        style="background:radial-gradient(circle at 30% 50%, rgba(100,255,218,0.08), transparent 60%);">
+                    </div>
+                    <div class="project-img-placeholder">
+                        <div style="font-size:3rem;margin-bottom:10px;">🏙️</div>
+                        SMART CITY ETHIOPIA
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-overline">Featured Project</div>
+                    <div class="project-title">Smart City Ethiopia</div>
+                    <div class="project-desc-card">
+                        <p>An AI-powered, multilingual e-government portal providing centralised access to passport
+                            applications, business licensing, driver's licences, land registry, and vital records —
+                            designed for Ethiopia's 120 million citizens. Built with a multilingual NLP layer supporting
+                            Amharic, Afaan Oromo, and English to replace fragmented, paper-based government workflows.
+                        </p>
+                    </div>
+                    <div class="project-tech">
+                        <span>Python</span><span>·</span><span>TypeScript</span><span>·</span>
+                        <span>React</span><span>·</span><span>AI/ML</span><span>·</span><span>NLP</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/SegniNegasa123/SMART-CITY-ETHIOPIA" target="_blank">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ODA VIEW -->
+            <div class="project-featured reveal">
+                <div class="project-img" style="background:linear-gradient(135deg,#0A192F,#0d2137);">
+                    <div class="project-img-bg"
+                        style="background:radial-gradient(circle at 70% 50%, rgba(100,255,218,0.07), transparent 60%);">
+                    </div>
+                    <div class="project-img-placeholder">
+                        <div style="font-size:3rem;margin-bottom:10px;">📚</div>
+                        ODA VIEW PLATFORM
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-overline">Institutionally Adopted</div>
+                    <div class="project-title">ODA VIEW</div>
+                    <div class="project-desc-card">
+                        <p>A full-stack student-teacher-parent communication platform built for and adopted by ODA
+                            Special Boarding School. Enables parents to securely access academic results, monitor
+                            student behaviour, and communicate with teachers remotely — replacing entirely manual record
+                            processes. Recognised by ODA-SBS with a Certificate of Completion.</p>
+                    </div>
+                    <div class="project-tech">
+                        <span>HTML</span><span>·</span><span>CSS</span><span>·</span>
+                        <span>JavaScript</span><span>·</span><span>Full-Stack</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/SegniNegasa123/STUDENTS-ONLINE-RESULT-SYSTEM" target="_blank">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Minor Projects Grid -->
+        <p class="projects-minor-heading reveal">Other <span>Notable</span> Work</p>
+        <div class="projects-grid">
+
+            <div class="project-card reveal">
+                <div class="top">
+                    <div class="folder">📁</div>
+                    <div class="links">
+                        <a href="https://github.com/SegniNegasa123/MERI-e-GOVERNMENT--SERVICE" target="_blank">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <h3>MERI — e-Government Service Portal</h3>
+                <p>National hackathon finalist platform — government service portal that ranked top 10 nationally and
+                    received official recognition. Demonstrates ability to design production-level systems under
+                    competitive constraints.</p>
+                <div class="tech">
+                    <span>TypeScript</span><span>·</span><span>React</span><span>·</span><span>Node.js</span>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="top">
+                    <div class="folder">📁</div>
+                    <div class="links">
+                        <a href="https://github.com/SegniNegasa123/BIOMIMETIC-COOLING-SIMULATION" target="_blank">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <h3>Biomimetic Cooling Simulation</h3>
+                <p>Open-source interactive simulation comparing traditional vs. biomimetic building cooling performance.
+                    Streamlit dashboard lets users adjust environmental parameters and visualise thermal outcomes in
+                    real time.</p>
+                <div class="tech">
+                    <span>Python</span><span>·</span><span>Streamlit</span><span>·</span><span>Fluid Dynamics</span>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="top">
+                    <div class="folder">📁</div>
+                    <div class="links">
+                        <a href="https://segninegasa123.github.io" target="_blank">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                <polyline points="15 3 21 3 21 9" />
+                                <line x1="10" y1="14" x2="21" y2="3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <h3>Personal Portfolio Website</h3>
+                <p>Hand-crafted personal portfolio built without a template — custom canvas particle animation,
+                    intersection observer scroll reveals, typewriter effect, and full mobile responsiveness.</p>
+                <div class="tech">
+                    <span>HTML</span><span>·</span><span>CSS</span><span>·</span><span>Vanilla JS</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════════
+     06 · SKILLS
+═══════════════════════════════════════════════════════════════════════════ -->
+    <section id="skills">
+        <div class="section-heading reveal">
+            <span class="num">05.</span>
+            <h2>Skills & Technologies</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-group reveal">
+                <div class="skill-group-title">Languages</div>
+                <div class="skill-item">
+                    <div class="skill-label"><span>Python</span><span>Advanced</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="--w:90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label"><span>JavaScript</span><span>Advanced</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="--w:85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label"><span>TypeScript</span><span>Intermediate</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="--w:72%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label"><span>HTML / CSS</span><span>Advanced</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="--w:88%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-group reveal">
+                <div class="skill-group-title">Frameworks & Tools</div>
+                <div class="skill-item">
+                    <div class="skill-label"><span>React.js</span><span>Intermediate</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="--w:75%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label"><span>Streamlit</span><span>Advanced</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="--w:85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label"><span>Node / Express</span><span>Intermediate</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="--w:68%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label"><span>Git / GitHub</span><span>Advanced</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="--w:87%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-group reveal">
+                <div class="skill-group-title">AI & Research</div>
+                <div class="skill-item">
+                    <div class="skill-label"><span>ML Fundamentals</span><span>Intermediate</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="--w:70%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label"><span>Data Visualisation</span><span>Advanced</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="--w:88%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label"><span>Scientific Writing</span><span>Advanced</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="--w:90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label"><span>Computational Sim.</span><span>Advanced</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="--w:83%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════════
+     07 · LEADERSHIP
+═══════════════════════════════════════════════════════════════════════════ -->
+    <section id="leadership">
+        <div class="section-heading reveal">
+            <span class="num">06.</span>
+            <h2>Leadership & Community</h2>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="tl-date">Summer 2024</div>
+                <div class="tl-title">Founder & Programme Director — Nekemt Coder Summer Camp</div>
+                <div class="tl-sub">Nekemt Catholic Kidane Mihiret School, Nekemt, Ethiopia</div>
+                <div class="tl-desc">Conceived, planned, and executed a full summer coding bootcamp in my hometown — a
+                    community where no structured technology education existed. Drove vision, curriculum design,
+                    logistics, and execution from scratch. Graduated 45 students certified in Python programming, data
+                    structures, and algorithms. This was not volunteerism: it was a deliberate, structural intervention
+                    in a systems problem.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="tl-date">2023 – 2025</div>
+                <div class="tl-title">Student Body Vice President & Students' Council Member</div>
+                <div class="tl-sub">ODA Special Boarding School, Adama, Ethiopia</div>
+                <div class="tl-desc">Represented the student body in institutional governance across a highly
+                    competitive academic environment. Navigated stakeholder interests and led with accountability in a
+                    school where students from across the Oromia region compete for 4.3% of available places.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="tl-date">2022 – 2025</div>
+                <div class="tl-title">Science & Technology Club — Student Lecturer</div>
+                <div class="tl-sub">ODA Special Boarding School</div>
+                <div class="tl-desc">Progressed from student member to independent lecturer within one academic year.
+                    Organised competitions and delivered knowledge-sharing sessions to peers, sharpening both technical
+                    understanding and the communication skills that distinguish engineers who lead.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="tl-date">2023</div>
+                <div class="tl-title">AddisCoder Spark Programme — Alumnus</div>
+                <div class="tl-sub">Nationally Competitive Python & Data Structures Curriculum</div>
+                <div class="tl-desc">Selected as one of 10 students from ODA-SBS — out of 50 national picks — for
+                    Ethiopia's premier youth computational thinking programme. AddisCoder is directed by professors from
+                    MIT and CMU.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="tl-date">2021 – 2025</div>
+                <div class="tl-title">Charity Club Coordinator · English Club Debate Contestant & Judge</div>
+                <div class="tl-sub">ODA Special Boarding School</div>
+                <div class="tl-desc">Coordinated charitable initiatives and represented the school in Great Debate
+                    competitions, later serving as a judge — developing the analytical argumentation skills that form
+                    the foundation of every written and presented research work.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="tl-date">2023 – Present</div>
+                <div class="tl-title">Founder — Forge Ethiopia (Forge ET)</div>
+                <div class="tl-sub">Builder-Focused Tech Community</div>
+                <div class="tl-desc">Building Ethiopia's first structured builder community for developers, designers,
+                    and AI practitioners. Three-track learning curriculum (Ignite / Build / Launch), Telegram ecosystem
+                    of 8 channels, and a 90-day launch roadmap. Tagline: "We forge builders."</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════════
+     08 · AWARDS
+═══════════════════════════════════════════════════════════════════════════ -->
+    <section id="awards">
+        <div class="section-heading reveal">
+            <span class="num">07.</span>
+            <h2>Awards & Recognition</h2>
+        </div>
+        <div class="awards-grid">
+            <div class="award-card reveal">
+                <div class="award-icon">🏆</div>
+                <div class="award-title">IEEE Recognition</div>
+                <div class="award-org">Traffic Flow Modeling — Meskel Square Research</div>
+                <div class="award-year">2025</div>
+            </div>
+            <div class="award-card reveal">
+                <div class="award-icon">📄</div>
+                <div class="award-title">OpenAIRE Indexed Publications × 2</div>
+                <div class="award-org">Traffic Flow Modeling · Biomimetic Cooling System</div>
+                <div class="award-year">2025</div>
+            </div>
+            <div class="award-card reveal">
+                <div class="award-icon">🎓</div>
+                <div class="award-title">AI & Career Empowerment Certificate</div>
+                <div class="award-org">Robert H. Smith School of Business, University of Maryland</div>
+                <div class="award-year">Aug 2025</div>
+            </div>
+            <div class="award-card reveal">
+                <div class="award-icon">🌍</div>
+                <div class="award-title">International Certificate of Honour</div>
+                <div class="award-org">Institut Mondial d'Art de la Jeunesse — UNESCO Centre, Troyes, France · Artwork
+                    permanently archived</div>
+                <div class="award-year">Age 13</div>
+            </div>
+            <div class="award-card reveal">
+                <div class="award-icon">🥇</div>
+                <div class="award-title">Top 10 — National Hackathon</div>
+                <div class="award-org">MERI e-Government Portal · Official government recognition</div>
+                <div class="award-year">2024</div>
+            </div>
+            <div class="award-card reveal">
+                <div class="award-icon">🔬</div>
+                <div class="award-title">STEMpower Science & Engineering Fair — Finalist</div>
+                <div class="award-org">Software Engineering Category · Foka STEM Center</div>
+                <div class="award-year">2023–2024</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════════
+     09 · CONTACT
+═══════════════════════════════════════════════════════════════════════════ -->
+    <section id="contact">
+        <div class="reveal">
+            <div class="contact-tag">06. What's Next?</div>
+            <h2 class="contact-heading">Get In Touch.</h2>
+            <p class="contact-desc">
+                I'm actively exploring research collaborations, internships, scholarship opportunities, and freelance
+                projects. Whether you're building something that solves a real problem, looking for a developer who
+                ships, or want to connect about AI and Africa's digital future — my inbox is always open.
+            </p>
+            <a href="mailto:segni.s.negasa@gmail.com" class="contact-btn">Say Hello ↗</a>
+        </div>
+    </section>
+
+    <!-- ── FOOTER ──────────────────────────────────────────────────────────────── -->
+    <footer>
+        <p>Designed & Built by <a href="https://github.com/SegniNegasa123" target="_blank">Segni Seyoum Negasa</a></p>
+        <p style="margin-top:6px;font-size:0.65rem;opacity:0.6;">Addis Ababa, Ethiopia · 2025</p>
+    </footer>
+
+    <script>
+        /* Blink cursor */
+        const style = document.createElement('style');
+        style.textContent = '@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}';
+        document.head.appendChild(style);
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
